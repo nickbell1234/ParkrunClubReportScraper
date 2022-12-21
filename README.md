@@ -7,6 +7,12 @@ Inputs:
 - How many events to go back from the above date (e.g. 1 would only give one event, 2 would give the above and the previous week)
 - Y/N flag of whether you want a branded image to be generated 
 
+Actions:
+- A request is made to the report URL, and the HTML is parsed
+- The relevant information (date, parkrun locations and results tables) is extracted
+- A csv is generated
+- A branded image is generated with results data written on
+
 Outputs:
 - csv file named parkrunData_ClubID.csv with fields Parkrun,Date,Position,GenderPosition,Name,Time
 - jpg image of results data written onto logo image (if requested)
