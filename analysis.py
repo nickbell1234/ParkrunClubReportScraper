@@ -29,6 +29,7 @@ def analyseParkrunReport(csvFile):
     # TODO: Minimum no. of events 
     lowestAverageTime = df.groupby(['Name'])['TimeInSec'].mean(numeric_only=False).nsmallest(10)
     print('Lowest average time:\n',lowestAverageTime,'\n')
+    
     print('─' * 25)
 
     mostParkruns=df.groupby('Name')['Parkrun'].count().nlargest(10)

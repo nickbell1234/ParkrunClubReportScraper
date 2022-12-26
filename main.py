@@ -55,7 +55,7 @@ def output_to_csv(data,club_id):
 
 def club_report_to_image(csv_file,club_id):
     # TODO sizing/spacing of text could be made dynamic with number of rows
-    img = Image.open('MRRlogo.jpg')
+    img = Image.open('logo.jpg')
     drawing = ImageDraw.Draw(img)
     with open(csv_file,'r') as input_file:
         example_reader = csv.reader(input_file)
