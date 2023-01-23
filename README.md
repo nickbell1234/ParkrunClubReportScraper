@@ -1,4 +1,5 @@
 # ParkrunClubReportScraper
+## main.py
 
 Inputs:
 - Club ID (can be found in consolidated report URL e.g. https://www.parkrun.com/results/consolidatedclub/?clubNum=21485) e.g. "21485"
@@ -16,3 +17,23 @@ Actions:
 Outputs:
 - csv file named parkrunData_ClubID.csv with fields Parkrun,Date,Position,GenderPosition,Name,Time
 - jpg image of results data written onto logo image (if requested)
+
+## analysis.py
+Inputs:
+- csv file output from main.py 
+
+Actions:
+- Uses pandas library to analyse the dataset:
+1. Top 10 quickest times
+2. Top 10 unique quickest performers
+3. Any first positions
+4. Any first gender positions
+5. Top 10 runners by lowest average position
+6. Top 10 runners by lowest average time
+7. Top 10 runners by most number of parkrun events
+8. Top 10 runners by most number of parkrun locations
+9. Top 10 runners by appearances at a single parkrun location
+10. Top 10 runners by appearances at Peel parkrun
+11. Total unique number of parkrun locations for the entire club
+12. List of unique parkrun locations (where there was only 1 visitor)
+13. Top 5 days by number of runners
