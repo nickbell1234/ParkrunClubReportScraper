@@ -1,4 +1,10 @@
 # ParkrunClubReportScraper
+See the following Google Colab notebook to see the output analysis for 2022 data from Manchester Road Runners:  
+https://colab.research.google.com/drive/1YNLPzJj9BJYoC3qxYTijo7Kpn2tO0fXc?usp=sharing
+
+See the following Google Colab notebook for an interactive parkrun data image generation tool:
+https://colab.research.google.com/drive/1zP5Jk0xr5G-a9j2ZJFngrqKfBolGNCmP?usp=sharing
+
 ## main.py
 
 Inputs:
