@@ -23,7 +23,10 @@ Inputs:
 - csv file output from main.py 
 
 Actions:
-- Uses pandas library to analyse the dataset:
+- Uses pandas library to analyse the dataset
+
+Outputs:
+- Printed analysis as below:
 1. Top 10 quickest times
 2. Top 10 unique quickest performers
 3. Any first positions
@@ -37,3 +40,29 @@ Actions:
 11. Total unique number of parkrun locations for the entire club
 12. List of unique parkrun locations (where there was only 1 visitor)
 13. Top 5 days by number of runners
+
+## graphs.py
+Inputs:
+- csv file output from main.py 
+
+Actions:
+- Uses pandas/matplotlib libraries to analyse and visualise the dataset
+
+Outputs: 
+- Most parkruns by a runner in 2022
+- Most popular parkrun locations in 2022
+- Histogram of 2022 finish times
+- Line graph of an individual's performances in 2022
+
+## maps.py
+Inputs:
+- csv file output from main.py 
+- parkrunUK.csv file containing latitude/longitude information for all UK parkruns
+- Shapes files in Shapes folder (e.g. Shapes\GBR_adm1.shp and all associated GBR_adm1 files)
+
+Actions:
+- Uses pandas, matplotlib and GeoPandas to visualise location data for the dataset
+
+Outputs:
+- UK base map with parkrun locations present in the scraped output dataset plotted as red circles
+- Marker size is proportional to number of occurences of that location in the dataset
